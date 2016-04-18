@@ -1,16 +1,18 @@
 {
-  "name": "edison",
+  "name": "DataAnalysis",
   "version": "0.0.1",
   "private": true,
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node server.js"
   },
-  "main": "app.js",
   "dependencies": {
     "express": "3.2.6",
-    "ejs": "*"
+    "ejs": "*",
+    "mongodb": "^2.1.16"
   },
   "devDependencies": {
+    "less": "^2.6.1",
     "mongodb": "^2.1.16"
   }
 }

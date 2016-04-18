@@ -1,59 +1,255 @@
+// .myDropDown {position: absolute;.my-dropdown .btn-default {width: 100%; height: 35px; background-color: white; text-align: left;}
+// .my-dropdown .dropdown-menu {background-color: white; width: 100%; text-align: left; overflow-y: scroll;}
+// .btn .caret {position:absolute; right: 5%; top: 45%;}
+// .open .dropdown-toggle.btn-default {background-color: white;}
+
+
+
+@bg-color: #428bca;
 
 html {
 	min-height: 100%;
 	height: 100%;
 	body {
-		height: inherit;
 		width: 100%;
+    height: 100%;
 		overfloat: hidden;
-		.main-container {
-			height: 100%;
-		}
-		.container-fluid {
-			padding: 0;
-		}
 
 		.modal-open{
 			position: fixed;
 			overflow: hidden;
 		}
-
 	}
 }
 
-
-#hail {
-	width: 80%;
-	height:80%;
+.container-fluid {
+      padding: 0;
 }
 
-#topnav{
+.master{
+  position: fixed;
+  height: 50px;
 
-	.navbar {
-	    padding: 3px 30px 1px 30px;
-	}
-	.nav-bgcolor {
-		background-color: #1E688C;
-	}
-}
+  .navbar {
+      padding: 3px 30px 1px 30px;
+  }
+  .nav-bgcolor {
+    background-color: #1E688C;
+  }
+  
+  .navbar-fixed-top {
+      border-width: 0 0 2px;
+  }
 
-
-
-#leftnav {
-	width: 20%;
-	height: interit;
-	background-color:#1E688C;
-	
 }
 
 
-#home {
-	padding-top: 60px;
+.home-container {
+  position: relative;
+  top:50px;
+  margin: 0px;
 }
+
+
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 56px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 0 20px 20px 20px;
+    overflow-x: hidden;
+    overflow-y: auto; 
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+.nav-sidebar {
+  margin-right: -21px; 
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+
+.main {
+  padding: 20px;
+  top: 50px;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 100%;
+    overfloat: hidden;
+  }
+
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+    top: 50px;
+  }
+}
+
+#hail-raw-data {
+  width: 100%;
+  height: 100%;
+}
+
 
 .grid {
-  width: 500px;
-  height: 250px;
+  // position: relative;
+  // top: 100px;
+  // width: 100%;
+  // height: 600px;
 }
+
+#mapContainer {
+
+
+}
+
+
+#claim-raw-data{
+
+  maring: 15px;
+
+  .top-section {
+    height: 90px;
+    margin: 10px;
+
+  }
+
+  .criteria-dropdown {
+    position: relative;
+    left: 380px;
+  }
+
+  .search-div {
+     position: relative;
+     top: 38px;
+
+      .search-btn {
+        width: 110px;
+        height: 30px;
+      }
+  }
+
+
+
+
+ .ui-grid-viewport {
+      overflow-x: auto !important;
+  }
+
+
+  .grid-data {
+    margin: 10px;
+  }
+
+
+}
+
+
+#hail-raw-data-container{
+  margin: 10px;
+
+  .input-div {
+    padding: 12px 0;
+  }
+
+
+  .input-search {
+    width: 500px;    
+  }
+
+}
+
+
+#average-claim-container{
+
+  margin: 10px;
+
+  .input-div {
+    padding: 12px 0;
+  }
+
+
+  .input-search {
+    width: 500px;    
+  }
+
+  .grid-data {
+    height: 200px;
+    mix-width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+
+  }
+
+  #average-claim-chart {
+    width: 600px;
+    height: 500px;
+
+  }
+
+}
+
+#population-affected-container{
+  width: 100%;
+  margin: 15px;
+
+
+  .grid-section {
+    width: 30%;
+    height: 700px;
+  }
+
+  .map-section {
+    position: relative;
+    height: 70%;
+    top: -700px;
+    max-width: 600px;
+    min-width: 400px;
+    margin: 0 auto;
+    left: 130px;
+  }
+
+}
+
+
+
+
+
+// #CatagoryDropDown{
+//   top: 10px;
+//   left: 20px;
+//   position: relative;
+
+// }
+
+// #criteriaDropDown {
+//   left: 350px;
+//   position: relative;
+
+// }
+
 
 

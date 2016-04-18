@@ -1,0 +1,39 @@
+
+<div id="claim-raw-data">
+
+    <div class="row top-section">
+        <div class="catagory-dropdown">
+            <my-drop-down options="Catagories" on-change="onCatagoryChange" control = "catagoryControl" width="300px" max-height="300px"></my-drop-down>
+        </div>
+
+        <div class="criteria-dropdown">
+            <div ng-hide="isClaimAmount">
+                <my-drop-down options="curDropdownData" control = "criteriaControl" width="300px" max-height="300px"></my-drop-down>
+            </div>
+
+            <div ng-show="isClaimAmount">
+               <span> Claim Value from: </span>
+               <input ng-model="downValue"> </input>
+               <span> to </span>
+               <input ng-model="upValue"> </input>
+            </div>
+
+        </div>
+        
+        <div  class="search-div">
+            <button class="search-btn" ng-click="onSearch()">Search</button>
+        </div>
+
+    </div>
+
+
+    <div class="row grid-data">
+
+        <div class="" id="claim-raw-data" ui-grid="{ data: ClaimRawData }" style="height: 700px; min-width: 400px; max-width: 100%; margin: 0 auto">
+        </div>
+
+    </div>
+
+
+
+</div>

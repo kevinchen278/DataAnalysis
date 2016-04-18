@@ -13,10 +13,10 @@ app.service('DBService', ['$http',"$q",  function($http, $q){
 
 
 		var request = $http({
-			url:  "http://localhost:3002",
+			url:  "http://dataanalysis-kevinchen278.rhcloud.com", //"http://localhost:8080", //
 			method: methodName,
 			headers: requestHead,
-			data: JSON.stringify(requestObj)
+			data: requestObj
 		});
 
 		var handleSuccess = function(response){
@@ -54,7 +54,6 @@ app.service('DBService', ['$http',"$q",  function($http, $q){
 		return promise;
 
 	};
-
 
 
 	return {
