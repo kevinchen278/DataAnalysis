@@ -13,7 +13,7 @@ app.service('DBService', ['$http',"$q",  function($http, $q){
 
 
 		var request = $http({
-			url:  "http://dataanalysis-kevinchen278.rhcloud.com", //"http://localhost:8080", //
+			url:  "http://localhost:8080", //"http://dataanalysis-kevinchen278.rhcloud.com", //
 			method: methodName,
 			headers: requestHead,
 			data: requestObj
