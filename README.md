@@ -1,5 +1,5 @@
 # DataAnalysis
-Samples data analysis application created with MAN (Mangodb, Angular and Node).
+Sample data analysis application created with MAN (Mangodb, Angular and Node).
 
 
 
@@ -12,9 +12,9 @@ Delplyment and Running Envirentment Request:
 
 (2) Deployment
 
-   a) Go to the project folder, run command: npm install
-   b) run the node server command, run command: npm start, or node server
-   c) open your browser, open the url:  http://localhost:8080
+       a) Go to the project folder, run command: npm install
+       b) run the node server command, run command: npm start, or node server
+       c) open your browser, open the url:  http://localhost:8080
    
    
    
