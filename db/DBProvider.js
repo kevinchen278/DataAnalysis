@@ -41,6 +41,10 @@ DBProvider.prototype.requestQuery = function(option){
 			console.log("distinct");
 			cursor = collection.distinct(this.query);
 			break;
+
+		case 'insert':
+			cursor = collection.insert(this.query);
+			break;
 		default:
 			console.log("cursor is null.");
 			cursor = null;

@@ -1,10 +1,17 @@
 var DBProvider = require("../db/DBProvider");
+var myUtils = require('../utils/utils.js');
+
 
 
 processRes  = function(req, res){
 
 		var query = [], Params = req.body.Params;
 		var dbCmd=[];
+
+		console.log("log:");
+		console.log(JSON.stringify(req.body,undefined, 4));
+		myUtils.saveLog(req);
+
 
 	  	switch (req.body.MethodName) {
 	  		case "getHailRawData":

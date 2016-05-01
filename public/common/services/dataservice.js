@@ -2,8 +2,8 @@
 
 var app = angular.module('app');
 
-app.service('DBService', ['$http',"$q",  function($http, $q){
-
+app.service('DBService', ['$http',"$q", "Settings", function($http, $q, Settings){
+	
 	var callService = function(methodName, requestObj){
 		var cur_time = new Date();
 		var requestHead = {
@@ -13,7 +13,7 @@ app.service('DBService', ['$http',"$q",  function($http, $q){
 
 
 		var request = $http({
-			url:  "http://localhost:8080", //"http://dataanalysis-kevinchen278.rhcloud.com", //
+			url:  (Settings.port!=='80') ? Settings.server + ":" + Settings.port: Settings.server,
 			method: methodName,
 			headers: requestHead,
 			data: requestObj

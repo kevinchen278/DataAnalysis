@@ -1,0 +1,19 @@
+{
+  "name": "DataAnalysis",
+  "description": "Sample with Angular, MongoDb, Nodejs.",
+  "main": "main.js",
+  "authors": [
+    "licongchen <licong.ch@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "devDependencies": {
+    "angular": "angularjs#^1.5.5",
+    "bootstrap": "^3.3.6",
+    "angular-ui-router": "ui-router#^0.2.18",
+    "highcharts": "hightcharts#^4.2.4",
+    "highmaps": "map#^4.2.4",
+    "angular-ui-grid": "ui-grid#^3.1.1"
+  }
+}

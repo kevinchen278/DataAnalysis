@@ -1,7 +1,5 @@
 "use strict";
 
-var app = angular.module('app',['ui.router','ui.grid',
-  'ui.grid.edit']);
  
 app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
 
@@ -18,7 +16,7 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 			abstract: true,
 			views: {
 				'master': {
-					templateUrl: "/modules/layout/master/views/master.html",
+					templateUrl: "modules/layout/master/views/master.html",
 					controller: 'masterController'
 					}
 				}
@@ -26,27 +24,27 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 
 		.state("home", {
 			parent: 'master',
-			templateUrl: '/modules/layout/home/views/home.html',
+			templateUrl: 'modules/layout/home/views/home.html',
 			controller: "homeController"
 
 		})
 
 		.state("home.hailRawData", {
 			parent: 'home',
-			templateUrl: '/modules/overview/views/HailRawData.html',
+			templateUrl: 'modules/overview/views/HailRawData.html',
 			controller: "hailRawDataController"
 		})
 
 		.state("home.ClaimRawData", {
 			parent: 'home',
-			templateUrl: '/modules/claims/views/ClaimRawData.html',
+			templateUrl: 'modules/claims/views/ClaimRawData.html',
 			controller: "ClaimRawDataController"
 		})
 
 
 		.state("home.PopulationAffected", {
 			parent: 'home',
-			templateUrl: '/modules/hail/views/PopulationAffected.html',
+			templateUrl: 'modules/hail/views/PopulationAffected.html',
 			controller: "PopulationAffectedController"
 
 		})
@@ -54,14 +52,14 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 
 		.state("home.hail", {
 			parent: 'home',
-			templateUrl: '/modules/hail/views/hail.html',
+			templateUrl: 'modules/hail/views/hail.html',
 			controller: "hailController"
 
 		})
 
 		.state("home.AverageClaim", {
 			parent: 'home',
-			templateUrl: '/modules/claims/views/AverageClaim.html',
+			templateUrl: 'modules/claims/views/AverageClaim.html',
 			controller: "AverageClaimController"
 
 		});

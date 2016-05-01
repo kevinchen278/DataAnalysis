@@ -3,14 +3,13 @@
 
 var app = angular.module('app');
 
-var chartData = [];
-
 app.controller('AverageClaimController', ['$scope',"DBService",'ChartFactory', function($scope, DBService, ChartFactory){
 	var req = {
 		MethodName: "getAverageClaimByState",
 		Params: []
 	};
 
+	var chartData = [];
 	var AverageClaimData = [];
 
 	DBService.callService("POST",req).then(
