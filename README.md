@@ -13,8 +13,9 @@ Delplyment and Running Envirentment Request:
 (2) Deployment
 
        a) Go to the project folder, run command: npm install
-       b) run the node server command, run command: npm start, or node server
+       b) run the node server command, run command: node server
        c) open your browser, open the url:  http://localhost:8080
+       d) or before step b, run command "gulp build" to generate the release version UI, then run the node server with npm start.
    
 (3) About the source codes.
 
