@@ -16,8 +16,12 @@ Delplyment and Running Envirentment Request:
        b) run the node server command, run command: node server
        c) open your browser, open the url:  http://localhost:8080
        d) or before step b, run command "gulp build" to generate the release version UI, then run the node server with npm start.
+
+(3) Deployed Openshift.
+
+     The application has been deployed on the openshift with the link: http://dataanalysis-kevinchen278.rhcloud.com/#/
    
-(3) About the source codes.
+(4) About the source codes.
 
     Database: mongodb. version 3.x
     Database Driver: mongodb native driver, 2.x
