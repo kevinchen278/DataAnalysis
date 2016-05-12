@@ -17,7 +17,7 @@ Delplyment and Running Envirentment Request:
        c) open your browser, open the url:  http://localhost:8080
        d) or before step b, run command "gulp build" to generate the release version UI, then run the node server with npm start.
 
-(3) Deployed Openshift.
+(3) Deployed on the Openshift.
 
      The application has been deployed on the openshift with the link: http://dataanalysis-kevinchen278.rhcloud.com/#/
    
